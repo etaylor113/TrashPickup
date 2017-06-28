@@ -60,14 +60,39 @@ namespace TrashPickup.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
-    }
+    }   
 
     public class RegisterViewModel
-    {
+    {       
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        [Required]        
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "Address")]
+        public string Address { get; set; }
+
+        [Required]
+        [Display(Name = "Contact Number")]
+        public string ContactNumber { get; set; } 
+
+        [Required]
+        [Display(Name = "Area Code")]
+        public string AreaCode { get; set; }
+
+        [Required]
+        [Display(Name = "Username")]
+        public string UserName { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
@@ -79,6 +104,10 @@ namespace TrashPickup.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "User Roles")]
+        public string UserRoles { get; set; }
     }
 
     public class ResetPasswordViewModel
