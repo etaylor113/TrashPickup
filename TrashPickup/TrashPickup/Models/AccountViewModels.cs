@@ -64,7 +64,6 @@ namespace TrashPickup.Models
 
     public class RegisterViewModel
     {       
-
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
@@ -138,4 +137,27 @@ namespace TrashPickup.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
+
+
+    public class WorkerViewModel
+    {
+
+        //
+        [Required]
+        [Display(Name = "Assigned Zip Code")]
+        public string ZipCode { get; set; }
+
+        [Required]
+        [Display(Name = "Routes")]
+        public string Routes { get; set; }
+
+        [Required]
+        [Display(Name = "My Users")]
+        public string WorkerUsers { get; set; }
+    }
+
+
+
+
+
 }

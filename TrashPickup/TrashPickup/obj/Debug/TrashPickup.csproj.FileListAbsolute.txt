@@ -82,3 +82,4 @@ C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\Tras
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.pdb
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.initialmigration.resources
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.csproj.GenerateResource.Cache
+C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.updatedatabase.resources
