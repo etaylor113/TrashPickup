@@ -209,6 +209,10 @@
     <Compile Include="Migrations\201706282226479_update-database.Designer.cs">
       <DependentUpon>201706282226479_update-database.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706301457469_added user info to models.cs" />
+    <Compile Include="Migrations\201706301457469_added user info to models.Designer.cs">
+      <DependentUpon>201706301457469_added user info to models.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModel.cs" />
     <Compile Include="Models\IdentityViewModel.cs" />
@@ -294,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706282226479_update-database.resx">
       <DependentUpon>201706282226479_update-database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706301457469_added user info to models.resx">
+      <DependentUpon>201706301457469_added user info to models.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
