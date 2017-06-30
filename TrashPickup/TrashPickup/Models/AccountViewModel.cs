@@ -141,23 +141,5 @@ namespace TrashPickup.Models
     }
 
 
-    //public class WorkerViewModel
-    //{
-    //    [Required]
-    //    [Display(Name = "Assigned Zip Code")]
-    //    public string ZipCode { get; set; }
-
-    //    [Required]
-    //    [Display(Name = "Routes")]
-    //    public string Routes { get; set; }
-
-    //    [Required]
-    //    [Display(Name = "My Users")]
-    //    public string WorkerUsers { get; set; }
-    //}
-
-
-
-
 
 }

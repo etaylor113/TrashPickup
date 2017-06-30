@@ -159,7 +159,6 @@ namespace TrashPickup.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    if(result.Equals("User"))
                     //UserManager.AddToRole(user.Id, "Employee");
                     await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 
@@ -177,34 +176,6 @@ namespace TrashPickup.Controllers
             // If we got this far, something failed, redisplay form
             return View(model);
         }
-
-
-        //[AllowAnonymous]
-        //public ActionResult Workers()
-        //{
-        //    return View();
-        //}
-
-        
-        //[HttpPost]
-        //[AllowAnonymous]
-        //[ValidateAntiForgeryToken]
-        //public async Task<ActionResult> Worker(RegisterViewModel model)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-        //        var result = await UserManager.CreateAsync(user, model.Password);
-        //        if (result.Succeeded)
-        //        {
-        //            await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);                 
-        //            return RedirectToAction("Index", "Home");
-        //        }
-        //        AddErrors(result);
-        //    }         
-        //    return View(model);
-        //}
-
 
 
         //
