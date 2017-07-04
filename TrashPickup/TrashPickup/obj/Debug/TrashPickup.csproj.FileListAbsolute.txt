@@ -84,3 +84,5 @@ C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\Tras
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.csproj.GenerateResource.Cache
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.updatedatabase.resources
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.addeduserinfotomodels.resources
+C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.Roleshookeduptopages.resources
+C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.Updatedroles.resources
