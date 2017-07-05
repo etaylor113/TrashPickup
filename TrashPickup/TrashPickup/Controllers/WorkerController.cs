@@ -20,6 +20,12 @@ namespace Trash_Collector.Controllers
             return View(db.Users.ToList());
         }
 
+        //GET: Map View
+        public ActionResult MapView()
+        {
+            return View();
+        }
+
         // GET: Employee/Details/5
         public ActionResult Details(string id)
         {
