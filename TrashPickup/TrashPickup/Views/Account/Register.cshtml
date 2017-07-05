@@ -44,6 +44,22 @@
         </div>
     </div>
 
+    //City
+    <div class="form-group">
+        @Html.LabelFor(m => m.City, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+        </div>
+    </div>
+
+    //State
+    <div class="form-group">
+        @Html.LabelFor(m => m.State, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.State, new { @class = "form-control" })
+        </div>
+    </div>
+
     //Contact Number
     <div class="form-group">
         @Html.LabelFor(m => m.ContactNumber, new { @class = "col-md-2 control-label" })

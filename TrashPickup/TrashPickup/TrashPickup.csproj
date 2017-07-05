@@ -228,6 +228,10 @@
     <Compile Include="Migrations\201707051321338_Added ViewMap View.Designer.cs">
       <DependentUpon>201707051321338_Added ViewMap View.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707052127246_added city and state.cs" />
+    <Compile Include="Migrations\201707052127246_added city and state.Designer.cs">
+      <DependentUpon>201707052127246_added city and state.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModel.cs" />
     <Compile Include="Models\IdentityViewModel.cs" />
@@ -327,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707051321338_Added ViewMap View.resx">
       <DependentUpon>201707051321338_Added ViewMap View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707052127246_added city and state.resx">
+      <DependentUpon>201707052127246_added city and state.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

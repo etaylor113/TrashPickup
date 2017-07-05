@@ -84,7 +84,15 @@ namespace TrashPickup.Models
 
         [Required]
         [Display(Name = "Contact Number")]
-        public string ContactNumber { get; set; } 
+        public string ContactNumber { get; set; }
+
+        [Required]
+        [Display(Name = "State")]
+        public string State { get; set; }
+
+        [Required]
+        [Display(Name = "City")]
+        public string City { get; set; }
 
         [Required]
         [Display(Name = "Area Code")]

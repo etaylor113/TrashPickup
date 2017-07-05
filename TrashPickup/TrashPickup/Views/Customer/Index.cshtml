@@ -25,6 +25,12 @@
             Area Code
         </th>
         <th>
+            City
+        </th>
+        <th>
+            State
+        </th>
+        <th>
             Role
         </th>
         <th>
@@ -60,6 +66,12 @@
         </td>
         <td>
             @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().AreaCode
+        </td>
+        <td>
+            @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().City
+        </td>
+        <td>
+            @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().State
         </td>
         <td>
             @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().UserRoles

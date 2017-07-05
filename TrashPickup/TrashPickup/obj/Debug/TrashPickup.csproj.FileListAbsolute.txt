@@ -87,3 +87,4 @@ C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\Tras
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.Roleshookeduptopages.resources
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.Updatedroles.resources
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.AddedViewMapView.resources
+C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.addedcityandstate.resources

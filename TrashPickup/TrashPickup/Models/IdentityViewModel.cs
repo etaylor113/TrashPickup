@@ -18,6 +18,8 @@ namespace TrashPickup.Models
         public string ConfirmPassword { get; set; } 
         public string UserRoles { get; set; }
         public string DayOfWeek { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {

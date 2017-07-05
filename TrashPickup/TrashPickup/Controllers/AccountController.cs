@@ -162,6 +162,8 @@ namespace TrashPickup.Controllers
                     FirstName = model.FirstName,
                     LastName = model.LastName,
                     Address = model.Address,
+                    City = model.City,
+                    State = model.State,
                     ContactNumber = model.ContactNumber,
                     AreaCode = model.AreaCode,
                     Password = model.Password,
