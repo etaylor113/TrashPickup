@@ -34,7 +34,7 @@ namespace TrashPickup.Controllers
             }
             else if (roll == "Employee")
             {
-                return RedirectToAction("Index", "Worker");
+                return RedirectToAction("Index", "Employee");
             }
 
             return View();
@@ -67,5 +67,7 @@ namespace TrashPickup.Controllers
 
             return View();
         }
+
+       
     }
 }

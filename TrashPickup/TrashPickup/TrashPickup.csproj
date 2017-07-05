@@ -200,6 +200,7 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Controllers\WorkerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -223,6 +224,10 @@
     <Compile Include="Migrations\201707041852599_Updated roles.cs" />
     <Compile Include="Migrations\201707041852599_Updated roles.Designer.cs">
       <DependentUpon>201707041852599_Updated roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707051321338_Added ViewMap View.cs" />
+    <Compile Include="Migrations\201707051321338_Added ViewMap View.Designer.cs">
+      <DependentUpon>201707051321338_Added ViewMap View.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModel.cs" />
@@ -292,7 +297,8 @@
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Admin\AdminView.cshtml" />
-    <Content Include="Views\Employee\ViewMap.cshtml" />
+    <Content Include="Views\Map.cshtml" />
+    <Content Include="Views\Map\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -320,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707041852599_Updated roles.resx">
       <DependentUpon>201707041852599_Updated roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707051321338_Added ViewMap View.resx">
+      <DependentUpon>201707051321338_Added ViewMap View.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

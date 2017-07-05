@@ -5,10 +5,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Welcome @Html.DisplayNameFor(model => model.FirstName)!</h2>
+<h2>Welcome!</h2>
 
 <h4>This is the employee menu.</h4>
 
+<p>
+    @Html.ActionLink("View Map", "Map")
+</p>
 
 <table class="table">
     <tr>
