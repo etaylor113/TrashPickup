@@ -6,7 +6,18 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Google map view of customers</h2>
 
+<div id="googleMap" style="width:100%;height:600px;"></div>
 
-<h2> Map view of customers</h2>
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtA7oJhzMM5lb5LZglWfl3yVQfAmSXkiI&callback=myMap"></script>
