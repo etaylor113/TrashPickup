@@ -1,16 +1,16 @@
 ﻿@model IEnumerable<TrashPickup.Models.ApplicationUser>
-
+@using Microsoft.AspNet.Identity
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Welcome!</h2>
+<h2>Welcome @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().FirstName!</h2>
 
 <h4>This is the employee menu.</h4>
 
 <p>
-    @Html.ActionLink("View Map", "Map")
+    @Html.ActionLink("View Map", "Map/Index")
 </p>
 
 <table class="table">
@@ -31,7 +31,7 @@
             Role
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DayOfWeek)
+            Day of Week
         </th>
         <th>
             Email
@@ -43,7 +43,7 @@
             Phone Number
         </th>
         <th>
-            Phone number confirmed
+            Phone Number Confirmed
         </th>
         <th>
             Username
@@ -51,48 +51,47 @@
         <th></th>
     </tr>
 
-    @foreach (var item in Model)
-    {
+   
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().FirstName
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LastName)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().LastName
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Address)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().Address
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.AreaCode)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().AreaCode
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UserRoles)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().UserRoles
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DayOfWeek)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().DayOfWeek
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Email)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().Email
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EmailConfirmed)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().EmailConfirmed
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PhoneNumber)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().PhoneNumber
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PhoneNumberConfirmed)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().PhoneNumberConfirmed
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.UserName)
+                @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().UserName
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                @Html.ActionLink("Edit", "Edit") 
+                @Html.ActionLink("Details", "Details") 
+                @Html.ActionLink("Delete", "Delete")
             </td>
         </tr>
-    }
+    
 
 </table>
