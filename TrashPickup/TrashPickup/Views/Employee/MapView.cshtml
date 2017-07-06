@@ -1,4 +1,5 @@
-﻿@model TrashPickup.Models.ApplicationUser
+﻿@model IEnumerable<TrashPickup.Models.ApplicationUser>
+@using Microsoft.AspNet.Identity
 @{
     ViewBag.Title = "MapView";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -81,8 +82,9 @@
             <b>Waypoints:</b> <br>
             <i>(Ctrl+Click or Cmd+Click to set routes)</i> <br>
             <select multiple id="waypoints">
-                <option value="440 Dardis Dr, Burlington, WI 53105">Burlington, WI</option>
-                <option value="539 Rose Ann Dr, Burlington, WI 53105">Burlington, WI</option>
+               
+                <option value="440 Dardis Dr, Burlington, WI 53105">440 Dardis Dr</option>
+                <option value="539 Rose Ann Dr, Burlington, WI 53105">539 Rose Ann Dr</option>
          
             </select>
             <br>

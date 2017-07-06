@@ -13,6 +13,7 @@ namespace Trash_Collector.Controllers
     public class EmployeeController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+        
 
         // GET: Employee
         public ActionResult Index()
@@ -25,6 +26,18 @@ namespace Trash_Collector.Controllers
         {
             return View();
         }
+
+        public ActionResult ViewDays()
+        {
+            List<UserPickupDays> userPickupDays = new List<UserPickupDays>();
+            UserPickupDays pickupDay = new UserPickupDays();
+
+
+
+
+            return View(userPickupDays);
+        }
+
 
         // GET: Employee/Details/5
         public ActionResult Details(string id)
@@ -43,6 +56,11 @@ namespace Trash_Collector.Controllers
 
         // GET: Employee/Create
         public ActionResult Create()
+        {
+            return View();
+        }
+
+        public ActionResult EmployeeCustomerView()
         {
             return View();
         }

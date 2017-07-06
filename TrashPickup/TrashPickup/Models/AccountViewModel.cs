@@ -4,6 +4,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TrashPickup.Models
 {
+    public class UserPickupDays
+    {
+        
+    }
+
+
+
+
     public class ExternalLoginConfirmationViewModel
     {
         [Required]

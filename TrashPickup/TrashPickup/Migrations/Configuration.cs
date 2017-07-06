@@ -52,11 +52,11 @@ namespace TrashPickup.Migrations
             context.Roles.AddOrUpdate(r => r.Name,
 
               new IdentityRole { Name = "Customer" },
-              new IdentityRole { Name = "Employee" },
-              new IdentityRole { Name = "Admin" }
+              new IdentityRole { Name = "Employee" }
+              //new IdentityRole { Name = "Admin" }
               );
-            var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
-            UserManager.AddToRole("f9335ee0-07a8-4a03-b489-59a9c87864fd", "Admin");
+            //var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+            //UserManager.AddToRole("f9335ee0-07a8-4a03-b489-59a9c87864fd", "Admin");
 
         }
 

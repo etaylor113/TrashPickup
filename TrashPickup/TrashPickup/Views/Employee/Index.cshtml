@@ -13,6 +13,24 @@
     @Html.ActionLink("View Map", "MapView")
 </p>
 
+<div class="form-group">
+    @Html.Label("Select Day", new { @class = "col-md-2 control-label" })
+    <div class="col-md-10">
+        @Html.DropDownList("DayOfWeek", new SelectList(new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"}))
+    </div>
+</div>
+
+    
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" class="btn btn-default" value="Submit" />
+    </div>
+</div>
+
+<p>
+    @Html.ActionLink("View my Customers", "EmployeeCustomersView")
+</p>
+
 <table class="table">
     <tr>
         <th>
@@ -95,3 +113,6 @@
     
 
 </table>
+
+
+
