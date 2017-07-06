@@ -126,11 +126,9 @@ namespace TrashPickup.Models
         [Display(Name = "User Roles")]
         public string UserRoles { get; set; }
 
-        [Required]
         [Display(Name = "Amount Owed")]
         public string AmountOwed { get; set; }
-
-        [Required]
+     
         [Display(Name = "Amount Days Owed")]
         public string AmountDaysOwed { get; set; }
 
