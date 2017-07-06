@@ -159,10 +159,10 @@ namespace TrashPickup.Controllers
         {
             if (ModelState.IsValid)
             {
-                
+
                 var user = new ApplicationUser {
                     UserName = model.Email,
-                    Email = model.Email,                   
+                    Email = model.Email,
                     FirstName = model.FirstName,
                     LastName = model.LastName,
                     Address = model.Address,
@@ -172,7 +172,8 @@ namespace TrashPickup.Controllers
                     AreaCode = model.AreaCode,
                     Password = model.Password,
                     ConfirmPassword = model.ConfirmPassword,
-                    UserRoles = model.UserRoles                  
+                    UserRoles = model.UserRoles,
+                    DayOfWeek = model.DayOfWeek                 
                 };
                
                 var result = await UserManager.CreateAsync(user, model.Password);
@@ -208,27 +209,6 @@ namespace TrashPickup.Controllers
             // If we got this far, something failed, redisplay form
             return View(model);
         }
-
-      
-        public ActionResult DisplayUserInfo()
-        {
-            List<RegisterViewModel> listUsers = new List<RegisterViewModel>();
-            RegisterViewModel userInfo = new RegisterViewModel();
-
-            string firstName = userInfo.FirstName;
-            string lastName = userInfo.LastName;
-            string address = userInfo.Address;
-            string city = userInfo.City;
-            string state = userInfo.State;
-            string areaCode = userInfo.AreaCode;
-          
-            return View(listUsers);
-        }
-
-
-
-
-
 
 
         //

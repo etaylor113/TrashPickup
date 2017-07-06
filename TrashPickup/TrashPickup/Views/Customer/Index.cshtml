@@ -99,7 +99,7 @@
             @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().EmailConfirmed
         </td>
         <td>
-            @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().PhoneNumber
+            @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().ContactNumber
         </td>
         <td>
             @Model.Where(item => item.UserName == User.Identity.GetUserName()).First().PhoneNumberConfirmed

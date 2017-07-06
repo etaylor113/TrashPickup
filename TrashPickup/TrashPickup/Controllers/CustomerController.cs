@@ -25,6 +25,16 @@ namespace Trash_Collector.Controllers
             return View();
         }
 
+        public ActionResult ViewAmountOwed()
+        {
+            return View();
+        }
+        public ActionResult SetVacationDay()
+        {
+            return View();
+        }
+
+
 
 
         // GET: Customer/Details/5

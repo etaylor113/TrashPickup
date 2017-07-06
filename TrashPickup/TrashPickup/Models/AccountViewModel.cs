@@ -9,9 +9,6 @@ namespace TrashPickup.Models
         
     }
 
-
-
-
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
