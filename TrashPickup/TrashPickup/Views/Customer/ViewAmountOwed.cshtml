@@ -6,6 +6,18 @@
 }
 
 <h2>Amount Owed</h2>
+@try
+{
+    foreach (var item in Model)
+    {
+        if (item.AmountOwed != null)
+        {
+            <h4>You owe $@item.AmountOwed </h4>
+        }
+    }
+}
 
-
-<h4>You owe $@Model.Where(item => item.UserName == User.Identity.GetUserName()).First().AmountOwed.</h4>
+catch
+{
+    <h4> You have no remaining payments.</h4>
+}
