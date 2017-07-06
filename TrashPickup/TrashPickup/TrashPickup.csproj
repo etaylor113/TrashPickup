@@ -240,6 +240,14 @@
     <Compile Include="Migrations\201707052156289_state and city added.Designer.cs">
       <DependentUpon>201707052156289_state and city added.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707061953173_added AmountOwed.cs" />
+    <Compile Include="Migrations\201707061953173_added AmountOwed.Designer.cs">
+      <DependentUpon>201707061953173_added AmountOwed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707061959461_added AmountDaysOwed.cs" />
+    <Compile Include="Migrations\201707061959461_added AmountDaysOwed.Designer.cs">
+      <DependentUpon>201707061959461_added AmountDaysOwed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModel.cs" />
     <Compile Include="Models\IdentityViewModel.cs" />
@@ -352,6 +360,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707052156289_state and city added.resx">
       <DependentUpon>201707052156289_state and city added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707061953173_added AmountOwed.resx">
+      <DependentUpon>201707061953173_added AmountOwed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707061959461_added AmountDaysOwed.resx">
+      <DependentUpon>201707061959461_added AmountDaysOwed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

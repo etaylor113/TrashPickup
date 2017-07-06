@@ -22,8 +22,10 @@ namespace TrashPickup.Models
         public string DayOfWeek { get; set; }
         public string City { get; set; }
         public string State { get; set; }
+        public string AmountOwed { get; set; }
+        public string AmountDaysOwed { get; set; }
 
-        
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType

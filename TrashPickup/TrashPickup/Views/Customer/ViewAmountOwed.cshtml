@@ -6,3 +6,6 @@
 }
 
 <h2>Amount Owed</h2>
+
+
+<h4>You owe $@Model.Where(item => item.UserName == User.Identity.GetUserName()).First().AmountOwed.</h4>

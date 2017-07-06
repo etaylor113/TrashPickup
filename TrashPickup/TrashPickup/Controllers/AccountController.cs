@@ -173,7 +173,9 @@ namespace TrashPickup.Controllers
                     Password = model.Password,
                     ConfirmPassword = model.ConfirmPassword,
                     UserRoles = model.UserRoles,
-                    DayOfWeek = model.DayOfWeek                 
+                    DayOfWeek = model.DayOfWeek,
+                    AmountOwed = model.AmountOwed,
+                    AmountDaysOwed = model.AmountDaysOwed                
                 };
                
                 var result = await UserManager.CreateAsync(user, model.Password);
