@@ -103,7 +103,7 @@ namespace TrashPickup.Models
         public string City { get; set; }
 
         [Required]
-        [Display(Name = "Area Code")]
+        [Display(Name = "Zip Code")]
         public string AreaCode { get; set; }
 
         [Required]
