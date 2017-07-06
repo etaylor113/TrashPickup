@@ -9,6 +9,9 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using TrashPickup.Models;
+using System.Collections.Generic;
+
+
 
 namespace TrashPickup.Controllers
 {
@@ -156,6 +159,7 @@ namespace TrashPickup.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 var user = new ApplicationUser {
                     UserName = model.Email,
                     Email = model.Email,                   
@@ -168,9 +172,9 @@ namespace TrashPickup.Controllers
                     AreaCode = model.AreaCode,
                     Password = model.Password,
                     ConfirmPassword = model.ConfirmPassword,
-                    UserRoles = model.UserRoles
+                    UserRoles = model.UserRoles                  
                 };
-
+               
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -206,6 +210,27 @@ namespace TrashPickup.Controllers
         }
 
       
+        public ActionResult DisplayUserInfo()
+        {
+            List<RegisterViewModel> listUsers = new List<RegisterViewModel>();
+            RegisterViewModel userInfo = new RegisterViewModel();
+
+            string firstName = userInfo.FirstName;
+            string lastName = userInfo.LastName;
+            string address = userInfo.Address;
+            string city = userInfo.City;
+            string state = userInfo.State;
+            string areaCode = userInfo.AreaCode;
+          
+            return View(listUsers);
+        }
+
+
+
+
+
+
+
         //
         // GET: /Account/ConfirmEmail
         [AllowAnonymous]

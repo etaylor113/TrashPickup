@@ -122,6 +122,10 @@ namespace TrashPickup.Models
         public string ConfirmPassword { get; set; }
 
         [Required]
+        [Display(Name = "Day of Week")]
+        public string DayOfWeek { get; set; }
+
+        [Required]
         [Display(Name = "User Roles")]
         public string UserRoles { get; set; }
         

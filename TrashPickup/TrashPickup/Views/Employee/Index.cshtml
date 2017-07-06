@@ -13,9 +13,13 @@
     @Html.ActionLink("View Map", "MapView")
 </p>
 
-<div class="form-group">
-    @Html.Label("Select Day", new { @class = "col-md-2 control-label" })
-    <div class="col-md-10">
+<p>
+    @Html.ActionLink("View my Customers", "EmployeeCustomersView")
+</p>
+
+<div id="TableTitle">
+    @Html.Label("Select Current Day", new { @class = "col-md-2 control-label" })
+    <div id="TableTitle">
         @Html.DropDownList("DayOfWeek", new SelectList(new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"}))
     </div>
 </div>
@@ -27,10 +31,16 @@
     </div>
 </div>
 
-<p>
-    @Html.ActionLink("View my Customers", "EmployeeCustomersView")
-</p>
 
+<h2 id="TableTitle">My Information</h2>
+
+<style> #TableTitle
+ {
+     float:left;
+     padding:20px;
+ }
+
+     </style>
 <table class="table">
     <tr>
         <th>

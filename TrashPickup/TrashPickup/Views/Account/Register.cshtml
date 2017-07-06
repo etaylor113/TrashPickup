@@ -101,6 +101,14 @@
         </div>
     </div>
 
+    //Day of week for pickup
+    <div class="form-group">
+        @Html.LabelFor(m => m.DayOfWeek, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.DayOfWeek, new { @class = "form-control" })
+        </div>
+    </div>
+
     //User Roles
     <div class="form-group">
         @Html.Label("Select user role", new { @class = "col-md-2 control-label" })
@@ -108,6 +116,7 @@
             @Html.DropDownList("UserRoles", new SelectList(new[] {"Customer", "Employee", "Admin" }))
         </div>
     </div>
+  
 
     //Button
     <div class="form-group">

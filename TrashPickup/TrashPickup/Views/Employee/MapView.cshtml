@@ -75,22 +75,26 @@
             <b>Start:</b>
 
             <select id="start">
-                <option value="6320 McHenry St, Burlington, WI 53105">Burlington, WI</option>
+                @*Admin Enter: Employee starting location*@
+                <option value="6320 McHenry St, Burlington, WI 53105">6320 McHenry St</option>
 
             </select>
             <br>
             <b>Waypoints:</b> <br>
             <i>(Ctrl+Click or Cmd+Click to set routes)</i> <br>
             <select multiple id="waypoints">
-               
+               @*Admin Enter: Employee route locations*@
                 <option value="440 Dardis Dr, Burlington, WI 53105">440 Dardis Dr</option>
                 <option value="539 Rose Ann Dr, Burlington, WI 53105">539 Rose Ann Dr</option>
-         
+                <option value="134 Conkey St, Burlington, WI 53105">134 Conkey St</option>
+                <option value="335 Park Ave, Burlington, WI 53105">1335 Park Ave</option>
+        
             </select>
             <br>
             <b>End:</b>
             <select id="end">
-                <option value="6320 McHenry St, Burlington, WI 53105">Burlington, WI</option>
+                @*Admin Enter: Employee ending location*@
+                <option value="6320 McHenry St, Burlington, WI 53105">6320 McHenry St</option>
 
             </select>
             <br>
@@ -140,7 +144,7 @@
             // For each route, display summary information.
             for (var i = 0; i < route.legs.length; i++) {
               var routeSegment = i + 1;
-              summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
+              summaryPanel.innerHTML += '<b>Route Number: ' + routeSegment +
                   '</b><br>';
               summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
               summaryPanel.innerHTML += route.legs[i].end_address + '<br>';

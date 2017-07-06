@@ -27,14 +27,15 @@ namespace Trash_Collector.Controllers
             return View();
         }
 
+        public ActionResult EmployeeCustomersView()
+        {
+            return View(db.Users.ToList());
+        }
+
         public ActionResult ViewDays()
         {
             List<UserPickupDays> userPickupDays = new List<UserPickupDays>();
             UserPickupDays pickupDay = new UserPickupDays();
-
-
-
-
             return View(userPickupDays);
         }
 
@@ -60,10 +61,7 @@ namespace Trash_Collector.Controllers
             return View();
         }
 
-        public ActionResult EmployeeCustomerView()
-        {
-            return View();
-        }
+ 
 
         // POST: Employee/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
