@@ -20,6 +20,13 @@ namespace Trash_Collector.Controllers
             return View(db.Users.ToList());
         }
 
+        public ActionResult ChangePickupDay()
+        {
+            return View();
+        }
+
+
+
         // GET: Customer/Details/5
         public ActionResult Details(string id)
         {

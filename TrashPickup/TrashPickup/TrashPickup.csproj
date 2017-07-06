@@ -310,6 +310,9 @@
     <Content Include="Views\Admin\AdminView.cshtml" />
     <Content Include="Views\Employee\MapView.cshtml" />
     <Content Include="Views\Employee\EmployeeCustomersView.cshtml" />
+    <Content Include="Views\Customer\ChangePickupDay.cshtml" />
+    <Content Include="Views\Customer\VieAmountOwed.cshtml" />
+    <Content Include="Views\Customer\SetVacationDay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
