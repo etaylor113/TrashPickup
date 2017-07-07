@@ -42,9 +42,23 @@ namespace Trash_Collector.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult SetCurrentDayView(RegisterViewModel model)
         {
-            var customer = db.Users.Where(item => item.UserName == User.Identity.Name).First();
+            var worker = db.Users.Where(item => item.UserName == User.Identity.Name).First();
 
-            customer.CurrentDay = model.CurrentDay;
+            worker.CurrentDay = model.CurrentDay;
+            foreach (ApplicationUser user in db.Users)
+            {
+                user.CurrentDay = worker.CurrentDay;
+            }
+            db.SaveChanges();
+
+            foreach (ApplicationUser user in db.Users)
+            {
+                if (user.DayOfWeek == worker.CurrentDay)
+                {
+                    user.AmountOwed += 35.00;
+                }
+
+            }
             db.SaveChanges();
             return RedirectToAction("Index", "Employee", db.Users.ToList());
         }
