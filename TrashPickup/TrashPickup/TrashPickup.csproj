@@ -326,6 +326,7 @@
     <Content Include="Views\Customer\ChangePickupDay.cshtml" />
     <Content Include="Views\Customer\ViewAmountOwed.cshtml" />
     <Content Include="Views\Customer\SetVacationDay.cshtml" />
+    <Content Include="Views\Employee\SetCurrentDayView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

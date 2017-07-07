@@ -32,13 +32,22 @@ namespace Trash_Collector.Controllers
             return View(db.Users.ToList());
         }
 
-        public ActionResult ViewDays()
+        public ActionResult SetCurrentDayView()
         {
-            List<UserPickupDays> userPickupDays = new List<UserPickupDays>();
-            UserPickupDays pickupDay = new UserPickupDays();
-            return View(userPickupDays);
+            return View();
         }
 
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public ActionResult SetCurrentDayView(RegisterViewModel model)
+        {
+            var customer = db.Users.Where(item => item.UserName == User.Identity.Name).First();
+
+            customer.CurrentDay = model.CurrentDay;
+            db.SaveChanges();
+            return RedirectToAction("Index", "Employee", db.Users.ToList());
+        }
 
         // GET: Employee/Details/5
         public ActionResult Details(string id)
@@ -60,8 +69,6 @@ namespace Trash_Collector.Controllers
         {
             return View();
         }
-
- 
 
         // POST: Employee/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
