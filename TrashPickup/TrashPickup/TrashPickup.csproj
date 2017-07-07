@@ -252,6 +252,10 @@
     <Compile Include="Migrations\201707070130053_day counter, week counter, currentday.Designer.cs">
       <DependentUpon>201707070130053_day counter, week counter, currentday.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707071244203_Changed AmountOwed to double.cs" />
+    <Compile Include="Migrations\201707071244203_Changed AmountOwed to double.Designer.cs">
+      <DependentUpon>201707071244203_Changed AmountOwed to double.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModel.cs" />
     <Compile Include="Models\CustomerViewModel.cs" />
@@ -375,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707070130053_day counter, week counter, currentday.resx">
       <DependentUpon>201707070130053_day counter, week counter, currentday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707071244203_Changed AmountOwed to double.resx">
+      <DependentUpon>201707071244203_Changed AmountOwed to double.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -119,7 +119,7 @@ namespace TrashPickup.Models
         public string ConfirmPassword { get; set; }
 
         [Required]
-        [Display(Name = "Day of Week")]
+        [Display(Name = "Desired Pickup Day")]
         public string DayOfWeek { get; set; }
 
         [Required]
@@ -127,10 +127,10 @@ namespace TrashPickup.Models
         public string UserRoles { get; set; }
 
         [Display(Name = "Amount Owed")]
-        public string AmountOwed { get; set; }
+        public double AmountOwed { get; set; }
      
         [Display(Name = "Amount Days Owed")]
-        public string AmountDaysOwed { get; set; }
+        public int AmountDaysOwed { get; set; }
 
         [Display(Name = "Day Counter")]
         public string DayCounter { get; set; }

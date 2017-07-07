@@ -53,9 +53,13 @@ namespace Trash_Collector.Controllers
 
             foreach (ApplicationUser user in db.Users)
             {
-                if (user.DayOfWeek == worker.CurrentDay)
+                if (user.DayOfWeek == worker.CurrentDay && user.WeekCounter <= 0)
                 {
-                    user.AmountOwed += 35.00;
+                    user.AmountOwed += 35;
+                }
+                else if (user.DayOfWeek == worker.CurrentDay && user.WeekCounter >= 0)
+                {
+                    user.WeekCounter -= 1;
                 }
 
             }

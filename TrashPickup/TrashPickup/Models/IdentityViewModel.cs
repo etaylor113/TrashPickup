@@ -22,8 +22,8 @@ namespace TrashPickup.Models
         public string DayOfWeek { get; set; }
         public string City { get; set; }
         public string State { get; set; }
-        public string AmountOwed { get; set; }
-        public string AmountDaysOwed { get; set; }
+        public double AmountOwed { get; set; }
+        public int AmountDaysOwed { get; set; }
         public string DayCounter  { get; set; }
         public int WeekCounter { get; set; }
         public string CurrentDay { get; set; }
