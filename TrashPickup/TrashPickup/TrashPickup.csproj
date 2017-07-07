@@ -248,8 +248,13 @@
     <Compile Include="Migrations\201707061959461_added AmountDaysOwed.Designer.cs">
       <DependentUpon>201707061959461_added AmountDaysOwed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707070130053_day counter, week counter, currentday.cs" />
+    <Compile Include="Migrations\201707070130053_day counter, week counter, currentday.Designer.cs">
+      <DependentUpon>201707070130053_day counter, week counter, currentday.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModel.cs" />
+    <Compile Include="Models\CustomerViewModel.cs" />
     <Compile Include="Models\IdentityViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -366,6 +371,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707061959461_added AmountDaysOwed.resx">
       <DependentUpon>201707061959461_added AmountDaysOwed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707070130053_day counter, week counter, currentday.resx">
+      <DependentUpon>201707070130053_day counter, week counter, currentday.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

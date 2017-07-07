@@ -23,8 +23,8 @@ namespace TrashPickup.Controllers
 
         ApplicationDbContext context;
         public AccountController()
-        {   
-                  
+        {
+            
         }
 
         
@@ -175,7 +175,10 @@ namespace TrashPickup.Controllers
                     UserRoles = model.UserRoles,
                     DayOfWeek = model.DayOfWeek,
                     AmountOwed = model.AmountOwed,
-                    AmountDaysOwed = model.AmountDaysOwed                
+                    AmountDaysOwed = model.AmountDaysOwed,
+                    DayCounter = model.DayCounter,
+                    WeekCounter = model.WeekCounter,
+                    CurrentDay = model.CurrentDay            
                 };
                
                 var result = await UserManager.CreateAsync(user, model.Password);

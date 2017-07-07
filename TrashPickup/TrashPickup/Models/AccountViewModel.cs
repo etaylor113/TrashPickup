@@ -132,6 +132,15 @@ namespace TrashPickup.Models
         [Display(Name = "Amount Days Owed")]
         public string AmountDaysOwed { get; set; }
 
+        [Display(Name = "Day Counter")]
+        public string DayCounter { get; set; }
+
+        [Display(Name = "Week Counter")]
+        public int WeekCounter { get; set; }
+
+        [Display(Name = "Current Day")]
+        public string CurrentDay { get; set; }
+
     }
         public class ResetPasswordViewModel
         {

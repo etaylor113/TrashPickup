@@ -92,3 +92,4 @@ C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\Tras
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.stateandcityadded.resources
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.addedAmountOwed.resources
 C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.addedAmountDaysOwed.resources
+C:\Users\Taylo\Desktop\DevProjects\C# Visual Studio\TrashPickup\TrashPickup\TrashPickup\obj\Debug\TrashPickup.Migrations.daycounterweekcountercurrentday.resources

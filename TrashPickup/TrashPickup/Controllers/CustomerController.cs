@@ -25,6 +25,18 @@ namespace Trash_Collector.Controllers
             return View();
         }
 
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public ActionResult ChangePickupDay(RegisterViewModel model)
+        {
+            var customer = db.Users.Where(item => item.UserName == User.Identity.Name).First();
+
+            customer.DayOfWeek = model.DayOfWeek;
+            db.SaveChanges();
+            return RedirectToAction("Index", "Customer", db.Users.ToList());
+        }
+
         public ActionResult ViewAmountOwed()
         {
             return View();

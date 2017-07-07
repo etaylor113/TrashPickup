@@ -39,7 +39,7 @@
 
     @foreach (var item in Model)
     {
-        if (item.UserRoles == "Customer" && item.AreaCode == "53105")
+        if (item.UserRoles == "Customer" && item.AreaCode == "53105" && item.DayCounter == item.CurrentDay)
         {
         <tr>
             <td>
