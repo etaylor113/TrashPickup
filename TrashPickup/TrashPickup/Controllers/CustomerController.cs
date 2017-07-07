@@ -39,8 +39,9 @@ namespace Trash_Collector.Controllers
 
         public ActionResult ViewAmountOwed()
         {
-            return View();
+            return View(db.Users.ToList());
         }
+
         public ActionResult SetVacationDay()
         {
             return View();
